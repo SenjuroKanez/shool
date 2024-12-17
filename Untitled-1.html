@@ -1,0 +1,230 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICT HITEC University Taxila</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">AICT HITEC University Taxila</a>
+            <div class="nav-links">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to AICT HITEC University Taxila</h1>
+        <p>This website provides information about the Department of Computer Science, our services, and ways to contact us.</p>
+    </main>
+</body>
+</html>
+
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">AICT HITEC University Taxila</a>
+            <div class="nav-links">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>About Us</h1>
+        <table class="team-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alice</td>
+                    <td>Developer</td>
+                    <td>alice@mail.com</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>Designer</td>
+                    <td>bob@mail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
+
+<!-- services.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">AICT HITEC University Taxila</a>
+            <div class="nav-links">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Our Services</h1>
+        <div class="services">
+            <div class="service-card">
+                <h2>Web Development</h2>
+                <p>We create responsive and modern websites tailored to your needs.</p>
+                <img src="placeholder.png" alt="Web Development">
+                <button>Learn More</button>
+            </div>
+            <div class="service-card">
+                <h2>Graphic Design</h2>
+                <p>Our team designs stunning graphics for your brand.</p>
+                <img src="placeholder.png" alt="Graphic Design">
+                <button>Learn More</button>
+            </div>
+            <div class="service-card">
+                <h2>SEO Optimization</h2>
+                <p>Improve your website's visibility with our SEO services.</p>
+                <img src="placeholder.png" alt="SEO Optimization">
+                <button>Learn More</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">AICT HITEC University Taxila</a>
+            <div class="nav-links">
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
+
+<!-- styles.css -->
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.team-table th, .team-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
